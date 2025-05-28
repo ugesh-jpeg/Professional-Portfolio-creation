@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #333;
+            color: white;
+        }
+        header {
+            background: black;
+            color: #66fcf1;
+            padding: 10px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2rem;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background: #444;
+            border-radius: 8px;
+        }
+        h2 {
+            color: #66fcf1;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        h3 {
+            margin-top: 10px;
+            font-size: 1.2rem;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        footer {
+            background: black;
+            color: #66fcf1;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portfolio Report</h1>
+    </header>
+
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>
+            The essential story told by my portfolio site is that of a forward-thinking UX/UI designer and developer with a strong passion for creating user-centered, visually stunning, and accessible web experiences. This portfolio highlights my versatility, showcasing a variety of projects across industries like e-commerce, entertainment, and omnichannel experiences. The version of me that this portfolio represents is one that merges creative design with technical expertise, striving to improve user satisfaction and business outcomes through innovative digital solutions.
+        </p>
+        <p>
+            The audience I am addressing consists of potential employers, recruiters, and collaborators in the tech and design industries, particularly those seeking candidates with a strong UX/UI focus. The structure of the site is simple but dynamic, consisting of core sections like Home, About, Projects, Reviews, and Contact. The goal is to present my skills, projects, and achievements clearly while providing a seamless and enjoyable browsing experience.
+        </p>
+    </section>
+
+    <section id="inspiration">
+        <h2>Inspiration</h2>
+        <ol>
+            <li>
+                <h3>Daniel Spatzek Portfolio</h3>
+                <p>Learned the importance of scroll-based highlights and interactive animations. I implemented similar transitions using JavaScript's IntersectionObserver, which changes the navigation link's active state based on the visible section.</p>
+            </li>
+            <li>
+                <h3>Adham Dannaway's Portfolio</h3>
+                <p>Inspired by interactive dropdown navigation under the 'About Me' section. I added a similar effect using JavaScript to handle dropdown toggling for navigation and interactive project sections.</p>
+            </li>
+            <li>
+                <h3>Sam Pierce's Portfolio</h3>
+                <p>A major inspiration for smooth animations and interactive project cards, which led me to add hover effects on project elements and rating systems for user reviews.</p>
+            </li>
+        </ol>
+    </section>
+
+    <section id="accessibility">
+        <h2>Accessibility</h2>
+        <ol>
+            <li>
+                <h3>Keyboard Navigation and Focus States</h3>
+                <p>By making the navigation keyboard-friendly and adding active states when links are focused or clicked, users with motor impairments can easily navigate the site without a mouse. This was achieved by ensuring that dropdowns and links are accessible via tab key and that they change states dynamically.</p>
+            </li>
+            <li>
+                <h3>Readable Animations for Users with Motion Sensitivity</h3>
+                <p>Animations on hover and scroll are subtle and avoid large movements that could cause discomfort for users sensitive to motion. JavaScript-controlled hover effects (mouseenter and mouseleave) add an engaging yet non-distracting visual layer.</p>
+            </li>
+            <li>
+                <h3>Content Display Control</h3>
+                <p>Milestone sections use JavaScript to toggle content visibility, ensuring users can choose when they want to expand and read more, which reduces cognitive load and makes it easier to focus on one section at a time.</p>
+            </li>
+        </ol>
+    </section>
+
+    <section id="usability">
+        <h2>Usability</h2>
+        <ol>
+            <li>
+                <h3>Dynamic Navigation Highlights</h3>
+                <p>Using the IntersectionObserver API, the navigation highlights the section currently in view, making it easier for users to know where they are on the page. This visual cue enhances the usability of long-scrolling pages.</p>
+            </li>
+            <li>
+                <h3>Interactive Project Sections</h3>
+                <p>Projects feature hover effects that lift the elements (translateY on mouseenter) and adjust the shadow to indicate clickability, enhancing user interaction feedback. This intuitive design encourages exploration.</p>
+            </li>
+            <li>
+                <h3>User Feedback on Reviews</h3>
+                <p>The review form utilizes a simple yet effective validation system, ensuring all fields are filled and providing clear feedback if users miss any. The interactive star rating system provides a tactile, enjoyable user experience when leaving feedback.</p>
+            </li>
+        </ol>
+    </section>
+
+    <section id="learning">
+        <h2>Learning</h2>
+        <ol>
+            <li>
+                <h3>Intersection Observer API</h3>
+                <p>I learned how to use the IntersectionObserver API to observe when different sections come into view and to trigger actions based on their visibility, such as changing the active state of navigation links.</p>
+            </li>
+            <li>
+                <h3>DOM Manipulation for Dropdown Menus and Rating Systems</h3>
+                <p>I enhanced my knowledge of DOM manipulation, particularly when handling dropdown menus in navigation and managing an interactive rating system. I achieved this by studying event listeners (click, mouseenter, mouseleave) and implementing conditional logic for different actions.</p>
+            </li>
+            <li>
+                <h3>CSS Transformations and Hover Effects</h3>
+                <p>I refined my knowledge of CSS transformations in conjunction with JavaScript to create dynamic hover effects on the project tiles and interactive cards. This was achieved by experimenting with translateY, shadows, and smooth transitions.</p>
+            </li>
+        </ol>
+    </section>
+
+    <section id="evaluation-i">
+        <h2>Evaluation I: Successes</h2>
+        <ol>
+            <li>
+                <h3>Interactive User Experience</h3>
+                <p>The use of JavaScript to create dynamic interactions, such as hover effects on project sections and active states in navigation, has been particularly successful in enhancing the overall user experience. It adds an extra layer of engagement and fluidity to the design.</p>
+            </li>
+            <li>
+                <h3>Responsive Design and Animations</h3>
+                <p>Implementing responsive animations that are subtle enough for various device types has been successful. Users on both mobile and desktop enjoy smooth transitions and a clean, modern interface.</p>
+            </li>
+            <li>
+                <h3>Review and Rating System</h3>
+                <p>The review and rating system was a challenging yet successful implementation. Users can submit feedback easily, with clear, intuitive visual feedback (star ratings) before submitting their review.</p>
+            </li>
+        </ol>
+    </section>
+
+    <section id="evaluation-ii">
+        <h2>Evaluation II: Areas for Improvement</h2>
+        <ol>
+            <li>
+                <h3>More Advanced Interactions</h3>
+                <p>Although the animations and interactions are functional, more advanced animations, like parallax effects or scroll-triggered animations using libraries like GSAP, could elevate the site further.</p>
+            </li>
+            <li>
+                <h3>More Intuitive Dropdown Menus</h3>
+                <p>The dropdown navigation could be improved to behave more predictively on touch devices, ensuring that users on mobile get an equally smooth experience when interacting with sub-menus.</p>
+            </li>
+            <li>
+                <h3>Refining the Rating System</h3>
+                <p>The star rating system works, but adding an animated transition or gradient effect during selection could improve the visual feedback, making it even more engaging and fun for users to interact with.</p>
+            </li>
+        </ol>
+    </section>
+
+    <section id="resources">
+        <h2>Resources</h2>
+        <h3>APIs and Code Libraries</h3>
+        <ul>
+            <li>IntersectionObserver API for detecting section visibility and managing active states in the navigation.</li>
+            <li>JavaScript Event Listeners for handling dynamic UI interactions (hover effects, click events).</li>
+            <li>CSS Transitions for smooth hover animations and transformations.</li>
+        </ul>
+        <h3>
+    </section>
+    
+    <section id="appendices">
+        <h2>Appendices</h2>
+            <div>
+                <img src="media/wireframe/wireframe.jpg" alt="Portfolio Wireframe Draft" style="width:100%;max-width:700px;margin:20px auto;display:block;">
+                <p style="text-align:center;color:#ccc;">Figure 1: Overall Wireframe</p>
+            </div>
+            <div style="display:flex;justify-content:space-between;flex-wrap:wrap;margin-top:20px;">
+                <div style="flex-basis:48%;text-align:center;">
+                    <img src="media/wireframe/Home Wireframe.png" alt="Portfolio Wireframe Draft" style="width:100%;max-width:700px;margin:20px auto;display:block;">
+                    <p style="text-align:center;color:#ccc;">Figure 2: Wireframe for Home page</p>
+                </div>
+                <div>
+                    <img src="media/wireframe/About me Wireframe.png" alt="Color Scheme Mockup" style="width:100%;max-width:700px;margin:20px auto;display:block;">
+                    <p style="text-align:center;color:#ccc;">Figure 3: Wireframe for About me page</p>
+                </div>
+            </div>
+            <div style="display:flex;justify-content:space-between;flex-wrap:wrap;margin-top:20px;">
+                <div style="flex-basis:48%;text-align:center;">
+                    <img src="media/wireframe/Project Wireframe.png" alt="Project Page Wireframe" style="width:100%;max-width:700px;margin:20px auto;display:block;">
+                    <p style="text-align:center;color:#ccc;">Figure 4: Wireframe for Project page</p>
+                </div>
+                <div>
+                    <img src="media/wireframe/Review Wireframe.png" alt="Responsive Layout Plan" style="width:100%;max-width:700px;margin:20px auto;display:block;">
+                    <p style="text-align:center;color:#ccc;">Figure 5: Wireframe for Review page</p>
+                </div>
+            </div>
+            <div>
+                <img src="media/wireframe/Contact Wireframe.png" alt="Finalized Design" style="width:100%;max-width:700px;margin:20px auto;display:block;">
+                <p style="text-align:center;color:#ccc;">Figure 6: Wireframe for Contact page</p>
+            </div>
+    </section>
