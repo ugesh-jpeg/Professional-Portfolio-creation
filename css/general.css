@@ -1,0 +1,81 @@
+/* General Styles */
+body {
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: white;
+}
+
+/* Navigation Bar Styling */
+nav {
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    padding: 10px 0;
+    z-index: 1000;
+    border-bottom: 2px solid #66fcf1;;
+}
+
+/* Navigation Links */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+/* Link Styling */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Active Link Styling */
+nav ul li a.active {
+    border-bottom: 2px solid #66fcf1;
+}
+
+/* Dropdown Menu Styling */
+nav ul .dropdown {
+    display: none; 
+    position: absolute;
+    background-color: #333;
+    padding: 10px;
+    list-style: none;
+}
+
+nav ul li:hover .dropdown {
+    display: block; 
+}
+
+nav ul .dropdown li {
+    margin: 5px 0;
+}
+
+main {
+    padding: 16vh 9vw;
+}
+
+footer {
+    background-color: black;
+    color: #66fcf1;
+    text-align: center;
+    padding: 4rem;
+    border-top: 2px solid #66fcf1;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #c5c6c7;
+}

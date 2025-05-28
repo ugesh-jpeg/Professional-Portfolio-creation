@@ -1,0 +1,180 @@
+/* Reset and Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Scroll Direction-Based Highlight */
+[data-scroll-direction="down"] nav ul li a.active {
+    border-bottom: 2px solid #ef476f; 
+}
+
+[data-scroll-direction="up"] nav ul li a.active {
+    border-bottom: 2px solid #66fcf1;; 
+}
+
+/* Main Section Styling */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 80vh;
+    padding: 20px;
+}
+
+.about {
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* 3D Rotating Box */
+.box {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    margin: 0 auto; 
+    transform-style: preserve-3d;
+    animation: animate 20s linear infinite;
+}
+
+.box span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(300px); 
+    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
+}
+
+/* Keyframes for rotating the box */
+@keyframes animate {
+    0% {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100% {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+.box span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 8px solid white;
+    border-radius: 18px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.timeline{
+    text-align: center;
+}
+
+.milestone-content {
+    display: none; 
+    margin-top: 10px;
+    transition: max-height 0.4s ease-in-out;
+}
+
+.milestone.active .milestone-content {
+    display: block; 
+}
+
+.milestone h3 {
+    cursor: pointer;
+    padding: 10px;
+    padding-left: 500px;
+    padding-right: 500px;
+    color:rgb(255, 255, 255);
+    background-color: #000000;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.milestone h3:hover {
+    background-color: #e1e1e1;
+}
+
+.scroller {
+    margin: 50px auto;
+    width: 70%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.scroller img {
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border:2px solid #000000;
+    transition: all ease-in-out 0.5s;
+}
+
+.scroller img:hover{
+    width: 25%;
+}
+
+/* Section Styling */
+section {
+    height: 100vh; 
+    padding: 70px 20px 20px 20px; 
+    border-bottom: 2px solid #45a29e;;
+    scroll-margin-top: 70px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+#milestones {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+#milestones h2 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Header and Footer Styling */
+header, footer {
+    background: black;
+    color: white;
+}
