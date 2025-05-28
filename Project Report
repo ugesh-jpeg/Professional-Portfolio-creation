@@ -1,1 +1,70 @@
+Introduction
+The essential story told by my portfolio site is that of a forward-thinking UX/UI designer and developer with a strong passion for creating user-centered, visually stunning, and accessible web experiences. This portfolio highlights my versatility, showcasing a variety of projects across industries like e-commerce, entertainment, and omnichannel experiences. The version of me that this portfolio represents is one that merges creative design with technical expertise, striving to improve user satisfaction and business outcomes through innovative digital solutions.
 
+The audience I am addressing consists of potential employers, recruiters, and collaborators in the tech and design industries, particularly those seeking candidates with a strong UX/UI focus. The structure of the site is simple but dynamic, consisting of core sections like Home, About, Projects, Reviews, and Contact. The goal is to present my skills, projects, and achievements clearly while providing a seamless and enjoyable browsing experience.
+
+Inspiration
+Daniel Spatzek Portfolio
+Learned the importance of scroll-based highlights and interactive animations. I implemented similar transitions using JavaScript's IntersectionObserver, which changes the navigation link's active state based on the visible section.
+
+Adham Dannaway's Portfolio
+Inspired by interactive dropdown navigation under the 'About Me' section. I added a similar effect using JavaScript to handle dropdown toggling for navigation and interactive project sections.
+
+Sam Pierce's Portfolio
+A major inspiration for smooth animations and interactive project cards, which led me to add hover effects on project elements and rating systems for user reviews.
+
+Accessibility
+Keyboard Navigation and Focus States
+By making the navigation keyboard-friendly and adding active states when links are focused or clicked, users with motor impairments can easily navigate the site without a mouse. This was achieved by ensuring that dropdowns and links are accessible via tab key and that they change states dynamically.
+
+Readable Animations for Users with Motion Sensitivity
+Animations on hover and scroll are subtle and avoid large movements that could cause discomfort for users sensitive to motion. JavaScript-controlled hover effects (mouseenter and mouseleave) add an engaging yet non-distracting visual layer.
+
+Content Display Control
+Milestone sections use JavaScript to toggle content visibility, ensuring users can choose when they want to expand and read more, which reduces cognitive load and makes it easier to focus on one section at a time.
+
+Usability
+Dynamic Navigation Highlights
+Using the IntersectionObserver API, the navigation highlights the section currently in view, making it easier for users to know where they are on the page. This visual cue enhances the usability of long-scrolling pages.
+
+Interactive Project Sections
+Projects feature hover effects that lift the elements (translateY on mouseenter) and adjust the shadow to indicate clickability, enhancing user interaction feedback. This intuitive design encourages exploration.
+
+User Feedback on Reviews
+The review form utilizes a simple yet effective validation system, ensuring all fields are filled and providing clear feedback if users miss any. The interactive star rating system provides a tactile, enjoyable user experience when leaving feedback.
+
+Learning
+Intersection Observer API
+I learned how to use the IntersectionObserver API to observe when different sections come into view and to trigger actions based on their visibility, such as changing the active state of navigation links.
+
+DOM Manipulation for Dropdown Menus and Rating Systems
+I enhanced my knowledge of DOM manipulation, particularly when handling dropdown menus in navigation and managing an interactive rating system. I achieved this by studying event listeners (click, mouseenter, mouseleave) and implementing conditional logic for different actions.
+
+CSS Transformations and Hover Effects
+I refined my knowledge of CSS transformations in conjunction with JavaScript to create dynamic hover effects on the project tiles and interactive cards. This was achieved by experimenting with translateY, shadows, and smooth transitions.
+
+Evaluation I: Successes
+Interactive User Experience
+The use of JavaScript to create dynamic interactions, such as hover effects on project sections and active states in navigation, has been particularly successful in enhancing the overall user experience. It adds an extra layer of engagement and fluidity to the design.
+
+Responsive Design and Animations
+Implementing responsive animations that are subtle enough for various device types has been successful. Users on both mobile and desktop enjoy smooth transitions and a clean, modern interface.
+
+Review and Rating System
+The review and rating system was a challenging yet successful implementation. Users can submit feedback easily, with clear, intuitive visual feedback (star ratings) before submitting their review.
+
+Evaluation II: Areas for Improvement
+More Advanced Interactions
+Although the animations and interactions are functional, more advanced animations, like parallax effects or scroll-triggered animations using libraries like GSAP, could elevate the site further.
+
+More Intuitive Dropdown Menus
+The dropdown navigation could be improved to behave more predictively on touch devices, ensuring that users on mobile get an equally smooth experience when interacting with sub-menus.
+
+Refining the Rating System
+The star rating system works, but adding an animated transition or gradient effect during selection could improve the visual feedback, making it even more engaging and fun for users to interact with.
+
+Resources
+APIs and Code Libraries
+IntersectionObserver API for detecting section visibility and managing active states in the navigation.
+JavaScript Event Listeners for handling dynamic UI interactions (hover effects, click events).
+CSS Transitions for smooth hover animations and transformations.
